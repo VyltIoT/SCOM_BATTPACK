@@ -1,0 +1,402 @@
+Removed Pin From Net: NetName=PACK_P Pin=C6-1
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=PACK_P Pin=C7-1
+Removed Pin From Net: NetName=PACK_P Pin=C8-1
+Removed Pin From Net: NetName=GND Pin=C9-2
+Removed Pin From Net: NetName=GND Pin=C10-2
+Removed Pin From Net: NetName=GND Pin=C12-2
+Removed Pin From Net: NetName=GND Pin=C13-2
+Removed Pin From Net: NetName=GND Pin=J5-1
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Pin From Net: NetName=GND Pin=J5-3
+Removed Pin From Net: NetName=GND Pin=J5-4
+Removed Pin From Net: NetName=GND Pin=J7-1
+Removed Pin From Net: NetName=GND Pin=J7-4
+Removed Pin From Net: NetName=GND Pin=J11-1
+Removed Pin From Net: NetName=GND Pin=J11-4
+Removed Pin From Net: NetName=GND Pin=NTC1-1
+Removed Pin From Net: NetName=PACK_MID Pin=R3-1
+Removed Pin From Net: NetName=PACK_MID Pin=R4-1
+Removed Pin From Net: NetName=ADAP_DET_LV Pin=R5-1
+Removed Pin From Net: NetName=GND Pin=R10-1
+Removed Pin From Net: NetName=NetR7_2 Pin=R13-2
+Removed Pin From Net: NetName=GND Pin=R14-1
+Removed Pin From Net: NetName=GND Pin=U1-6
+Removed Pin From Net: NetName=NetR7_2 Pin=U1-8
+Removed Pin From Net: NetName=PACK_P Pin=U1-10
+Removed Pin From Net: NetName=GND Pin=U1-13
+Removed Pin From Net: NetName=MP2672_NSTAT Pin=U1-16
+Removed Pin From Net: NetName=MP2672_NACK Pin=U1-18
+Removed Member From Class: ClassName=POWER Member=C9
+Removed Member From Class: ClassName=POWER Member=C10
+Removed Member From Class: ClassName=POWER Member=C12
+Removed Member From Class: ClassName=POWER Member=C13
+Removed Member From Class: ClassName=POWER Member=NTC1
+Removed Member From Class: ClassName=POWER Member=R11
+Removed Member From Class: ClassName=POWER Member=R12
+Removed Member From Class: ClassName=POWER Member=R13
+Removed Member From Class: ClassName=POWER Member=R14
+Removed Member From Class: ClassName=POWER Member=R15
+Removed Member From Class: ClassName=J7_Nets Member=3V3
+Removed Member From Class: ClassName=J11_Nets Member=3V3
+Removed Member From Class: ClassName=R5_Nets Member=3V3
+Removed Member From Class: ClassName=J7_Nets Member=3V8
+Removed Member From Class: ClassName=J11_Nets Member=3V8
+Removed Member From Class: ClassName=J4_Nets Member=5V0
+Removed Member From Class: ClassName=J5_Nets Member=5V0
+Removed Member From Class: ClassName=R5_Nets Member=ADAP_DET_LV
+Removed Member From Class: ClassName=J4_Nets Member=GND
+Removed Member From Class: ClassName=J5_Nets Member=GND
+Removed Member From Class: ClassName=J6_Nets Member=GND
+Removed Member From Class: ClassName=R10_Nets Member=GND
+Removed Member From Class: ClassName=C2_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=J12_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=R7_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=R8_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=R9_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_LDO
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_NACK
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_NSTAT
+Removed Member From Class: ClassName=J12_Nets Member=MP2672_SCL
+Removed Member From Class: ClassName=R9_Nets Member=MP2672_SCL
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_SCL
+Removed Member From Class: ClassName=J12_Nets Member=MP2672_SDA
+Removed Member From Class: ClassName=R8_Nets Member=MP2672_SDA
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_SDA
+Removed Member From Class: ClassName=U1_Nets Member=MP2672_VOUT
+Removed Member From Class: ClassName=R1_Nets Member=NetC1_1
+Removed Member From Class: ClassName=L1_Nets Member=NetC1_2
+Removed Member From Class: ClassName=U1_Nets Member=NetC1_2
+Removed Member From Class: ClassName=R1_Nets Member=NetR1_2
+Removed Member From Class: ClassName=U1_Nets Member=NetR1_2
+Removed Member From Class: ClassName=R2_Nets Member=NetR2_1
+Removed Member From Class: ClassName=R6_Nets Member=NetR2_1
+Removed Member From Class: ClassName=R3_Nets Member=NetR3_2
+Removed Member From Class: ClassName=R4_Nets Member=NetR3_2
+Removed Member From Class: ClassName=U1_Nets Member=NetR3_2
+Removed Member From Class: ClassName=R6_Nets Member=NetR6_1
+Removed Member From Class: ClassName=R10_Nets Member=NetR6_1
+Removed Member From Class: ClassName=U1_Nets Member=NetR6_1
+Removed Member From Class: ClassName=U1_Nets Member=NetR11_2
+Removed Member From Class: ClassName=U1_Nets Member=NetR12_2
+Removed Member From Class: ClassName=U2_Nets Member=NetR15_2
+Removed Member From Class: ClassName=R3_Nets Member=PACK_MID
+Removed Member From Class: ClassName=R4_Nets Member=PACK_MID
+Removed Member From Class: ClassName=C8_Nets Member=PACK_P
+Removed Member From Class: ClassName=C5_Nets Member=VCC
+Removed Member From Class: ClassName=L1_Nets Member=VCC
+Removed Member From Class: ClassName=R2_Nets Member=VCC
+Removed Member From Class: ClassName=U1_Nets Member=VCC
+Removed Member From Class: ClassName=J1_Nets Member=VIN
+Change Component Footprint: Designator=C1 Old Footprint=CAPC1608X10N New Footprint=CAP_6.3_7.7
+Change Component Footprint: Designator=C3 Old Footprint=CAPC2012X13L New Footprint=CAPC1608X10N
+Change Component Footprint: Designator=C4 Old Footprint=CAPC2012X13L New Footprint=CAPC1608X10N
+Change Component Footprint: Designator=C5 Old Footprint=CAPC2012X13L New Footprint=CAPC1608X10N
+Change Component Footprint: Designator=C7 Old Footprint=CAPC2012X13L New Footprint=CAPC1608X10N
+Change Component Footprint: Designator=C8 Old Footprint=CAPC2012X13L New Footprint=CAPC1608X10N
+Change Component Footprint: Designator=L1 Old Footprint=IND_7040 New Footprint=IND_1212
+Change Component Footprint: Designator=U1 Old Footprint=MP2672AGD New Footprint=QFN65P400X400X90_HS-17M
+Change Component Footprint: Designator=R1 Old Footprint=RES_0603 New Footprint=RESC3116X06M
+Change Component Footprint: Designator=R2 Old Footprint=RES_0603 New Footprint=RESC3116X06M
+Change Component Footprint: Designator=R3 Old Footprint=RESC3115X06N New Footprint=RESC3116X06M
+Change Component Footprint: Designator=R4 Old Footprint=RESC3115X06N New Footprint=RESC3116X06M
+Change Component Comment : Designator=R1 Old Comment=ERP_101-1 New Comment=RES_1206
+Change Component Comment : Designator=R2 Old Comment=ERP_101-1 New Comment=RES_1206
+Change Component Comment : Designator=R3 Old Comment=ERP_101-1 New Comment=RES_1206
+Change Component Comment : Designator=R4 Old Comment=ERP_101-1 New Comment=RES_1206
+Change Component Comment : Designator=L1 Old Comment=IND_7040 New Comment=IND_1212
+Change Component Comment : Designator=C1 Old Comment=MLCC_0603 New Comment=ERP_102-2
+Change Component Comment : Designator=C3 Old Comment=MLCC_0805 New Comment=MLCC_0603
+Change Component Comment : Designator=C4 Old Comment=MLCC_0805 New Comment=MLCC_0603
+Change Component Comment : Designator=C5 Old Comment=MLCC_0805 New Comment=MLCC_0603
+Change Component Comment : Designator=C7 Old Comment=MLCC_0805 New Comment=MLCC_0603
+Change Component Comment : Designator=C8 Old Comment=MLCC_0805 New Comment=MLCC_0603
+Change Component Comment : Designator=U1 Old Comment=MP2672AGD New Comment=TP5100
+Change Component Designator: OldDesignator=BAT1 NewDesignator=BAT2
+Change Component Designator: OldDesignator=BAT2 NewDesignator=BAT1
+Change Component Designator: OldDesignator=C2 NewDesignator=C6
+Change Component Designator: OldDesignator=J4 NewDesignator=J8
+Change Component Designator: OldDesignator=J5 NewDesignator=J6
+Change Component Designator: OldDesignator=J6 NewDesignator=J9
+Change Component Designator: OldDesignator=J7 NewDesignator=J4
+Change Component Designator: OldDesignator=J8 NewDesignator=J10
+Change Component Designator: OldDesignator=J9 NewDesignator=J11
+Change Component Designator: OldDesignator=J10 NewDesignator=J7
+Change Component Designator: OldDesignator=J11 NewDesignator=J5
+Change Component Designator: OldDesignator=R15 NewDesignator=R9
+Change Component Kind : Designator=R10 Old Kind=Standard New Kind=Standard (No BOM)
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAPC1608X10N"; UniqueID = "\YKBXSODD" ("\YKBXSODD")
+Change component parameters (AddParameter): Name = "ERP"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "6.3x7.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C6"); Footprint = "CAPC1608X10N"; UniqueID = "\AVPJDWER" ("\AVPJDWER")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "CAPC2012X13L"; UniqueID = "\EGYSWAZM" ("\EGYSWAZM")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4" ("C4"); Footprint = "CAPC2012X13L"; UniqueID = "\WWOFGIVF" ("\WWOFGIVF")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C5" ("C5"); Footprint = "CAPC2012X13L"; UniqueID = "\LTGHHFSO" ("\LTGHHFSO")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100pF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAPC2012X13L"; UniqueID = "\WDMWVARY" ("\WDMWVARY")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8" ("C8"); Footprint = "CAPC2012X13L"; UniqueID = "\MAFWAHTN" ("\MAFWAHTN")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "L1" ("L1"); Footprint = "IND_7040"; UniqueID = "\KCCHMZRB" ("\KCCHMZRB")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "ST2103SD0923"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "22uH"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R1" ("R1"); Footprint = "RES_0603"; UniqueID = "\NWMLIRAL" ("\NWMLIRAL")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "RES_0603"; UniqueID = "\HZXWLEMR" ("\HZXWLEMR")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R3" ("R3"); Footprint = "RESC3115X06N"; UniqueID = "\WHLIGGLT" ("\WHLIGGLT")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R4"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R4" ("R4"); Footprint = "RESC3115X06N"; UniqueID = "\QBIZEHZW" ("\QBIZEHZW")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "1206"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R2"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "RES_0603"; UniqueID = "\KQKSPSHT" ("\KQKSPSHT")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3R"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "RES_0603"; UniqueID = "\LFUCJATU" ("\LFUCJATU")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7" ("R7"); Footprint = "RES_0603"; UniqueID = "\CRWPNSUK" ("\CRWPNSUK")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R8" ("R8"); Footprint = "RES_0603"; UniqueID = "\TVNKAELA" ("\TVNKAELA")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "50k"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "RES_0603"; UniqueID = "\ARWTCVHL" ("\ARWTCVHL")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "NM"; VariantName = "[No Variations]"
+Change component parameters: Designator = "U1" ("U1"); Footprint = "MP2672AGD"; UniqueID = "\IGAKCIAM" ("\IGAKCIAM")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Top Power"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "TP5100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAPC2012X13L)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Added Component: Designator=D1(DIOM6959X26L)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier  1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "SS54"; VariantName = "[No Variations]"
+Added Component: Designator=J3(2PX1R)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=PACK_P Pin=C3-1
+Added Pin To Net: NetName=PACK_P Pin=C4-1
+Added Pin To Net: NetName=GND Pin=D1-2
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=3V8 Pin=J4-1
+Added Pin To Net: NetName=3V8 Pin=J4-2
+Added Pin To Net: NetName=3V8 Pin=J4-3
+Added Pin To Net: NetName=3V8 Pin=J4-4
+Added Pin To Net: NetName=3V8 Pin=J5-1
+Added Pin To Net: NetName=3V8 Pin=J5-2
+Added Pin To Net: NetName=3V8 Pin=J5-3
+Added Pin To Net: NetName=3V8 Pin=J5-4
+Added Pin To Net: NetName=3V8 Pin=J6-1
+Added Pin To Net: NetName=3V8 Pin=J6-2
+Added Pin To Net: NetName=3V8 Pin=J6-3
+Added Pin To Net: NetName=3V8 Pin=J6-4
+Added Pin To Net: NetName=3V8 Pin=J6-5
+Added Pin To Net: NetName=3V8 Pin=J6-6
+Added Pin To Net: NetName=GND Pin=J8-5
+Added Pin To Net: NetName=GND Pin=J8-6
+Added Pin To Net: NetName=PACK_P Pin=R2-1
+Added Pin To Net: NetName=PACK_P Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R8-1
+Added Pin To Net: NetName=PACK_P Pin=R9-1
+Added Pin To Net: NetName=NetR7_2 Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=PACK_P Pin=U1-9
+Added Pin To Net: NetName=GND Pin=U1-17
+Change Net Name : Old Net Name=3V8 New Net Name=12V0
+Change Net Name : Old Net Name=NetR15_2 New Net Name=NetR9_2
+Change Net Name : Old Net Name=VIN New Net Name=VCC
+Added Pin To Net: NetName=BATT_CHRG Pin=J12-2
+Added Pin To Net: NetName=BATT_CHRG Pin=R6-2
+Added Pin To Net: NetName=BATT_CHRG Pin=U1-15
+Added Net: Name=BATT_CHRG
+Added Pin To Net: NetName=NetC5_1 Pin=C5-1
+Added Pin To Net: NetName=NetC5_1 Pin=R5-1
+Added Net: Name=NetC5_1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=L1-1
+Added Pin To Net: NetName=NetD1_1 Pin=R5-2
+Added Pin To Net: NetName=NetD1_1 Pin=U1-2
+Added Pin To Net: NetName=NetD1_1 Pin=U1-3
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_2 Pin=R10-1
+Added Pin To Net: NetName=NetJ3_2 Pin=U1-11
+Added Net: Name=NetJ3_2
+Added Pin To Net: NetName=NetJ12_3 Pin=J12-3
+Added Net: Name=NetJ12_3
+Added Pin To Net: NetName=NetJ12_4 Pin=J12-4
+Added Net: Name=NetJ12_4
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=R3-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-4
+Added Pin To Net: NetName=NetR1_1 Pin=U1-5
+Added Pin To Net: NetName=NetR1_1 Pin=U1-16
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR7_1 Pin=R7-1
+Added Net: Name=NetR7_1
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=U1-12
+Added Net: Name=NetR8_2
+Added Pin To Net: NetName=NetU1_14 Pin=U1-14
+Added Net: Name=NetU1_14
+Added Pin To Net: NetName=TP5100_VREG Pin=C6-1
+Added Pin To Net: NetName=TP5100_VREG Pin=R10-2
+Added Pin To Net: NetName=TP5100_VREG Pin=U1-10
+Added Pin To Net: NetName=TP5100_VREG Pin=U1-13
+Added Net: Name=TP5100_VREG
+Added Pin To Net: NetName=TP5100_VS Pin=C7-1
+Added Pin To Net: NetName=TP5100_VS Pin=C8-1
+Added Pin To Net: NetName=TP5100_VS Pin=L1-2
+Added Pin To Net: NetName=TP5100_VS Pin=R2-2
+Added Pin To Net: NetName=TP5100_VS Pin=R4-2
+Added Pin To Net: NetName=TP5100_VS Pin=U1-8
+Added Net: Name=TP5100_VS
+Added Pin To Net: NetName=VIN Pin=C1-1
+Added Pin To Net: NetName=VIN Pin=C2-1
+Added Pin To Net: NetName=VIN Pin=R1-2
+Added Pin To Net: NetName=VIN Pin=R3-2
+Added Pin To Net: NetName=VIN Pin=R6-1
+Added Pin To Net: NetName=VIN Pin=SW1-2
+Added Pin To Net: NetName=VIN Pin=SW1-5
+Added Net: Name=VIN
+Change Class Name : Old Net Name=C4_Nets New Net Name=J2_Nets
+Change Class Name : Old Net Name=C6_Nets New Net Name=C3_Nets
+Change Class Name : Old Net Name=C7_Nets New Net Name=C4_Nets
+Change Class Name : Old Net Name=J2_Nets New Net Name=C1_Nets
+Added Class: Name=C6_Nets
+Added Class: Name=C7_Nets
+Added Class: Name=D1_Nets
+Added Class: Name=J3_Nets
+Added Member To Class: ClassName=POWER Member=Component D1 ERP_104-3
+Added Member To Class: ClassName=POWER Member=Component J3 2PX1R
+Added Member To Class: ClassName=J4_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J5_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J6_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J12_Nets Member=Wire BATT_CHRG
+Added Member To Class: ClassName=R6_Nets Member=Wire BATT_CHRG
+Added Member To Class: ClassName=U1_Nets Member=Wire BATT_CHRG
+Added Member To Class: ClassName=R8_Nets Member=Wire GND
+Added Member To Class: ClassName=C5_Nets Member=Wire NetC5_1
+Added Member To Class: ClassName=R5_Nets Member=Wire NetC5_1
+Added Member To Class: ClassName=L1_Nets Member=Wire NetD1_1
+Added Member To Class: ClassName=R5_Nets Member=Wire NetD1_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetD1_1
+Added Member To Class: ClassName=R10_Nets Member=Wire NetJ3_2
+Added Member To Class: ClassName=U1_Nets Member=Wire NetJ3_2
+Added Member To Class: ClassName=J12_Nets Member=Wire NetJ12_3
+Added Member To Class: ClassName=J12_Nets Member=Wire NetJ12_4
+Added Member To Class: ClassName=R1_Nets Member=Wire NetR1_1
+Added Member To Class: ClassName=R3_Nets Member=Wire NetR1_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR1_1
+Added Member To Class: ClassName=R7_Nets Member=Wire NetR7_1
+Added Member To Class: ClassName=R8_Nets Member=Wire NetR8_2
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR8_2
+Added Member To Class: ClassName=R9_Nets Member=Wire NetR9_2
+Added Member To Class: ClassName=U2_Nets Member=Wire NetR9_2
+Added Member To Class: ClassName=U1_Nets Member=Wire NetU1_14
+Added Member To Class: ClassName=R2_Nets Member=Wire PACK_P
+Added Member To Class: ClassName=R4_Nets Member=Wire PACK_P
+Added Member To Class: ClassName=R9_Nets Member=Wire PACK_P
+Added Member To Class: ClassName=R10_Nets Member=Wire TP5100_VREG
+Added Member To Class: ClassName=U1_Nets Member=Wire TP5100_VREG
+Added Member To Class: ClassName=C8_Nets Member=Wire TP5100_VS
+Added Member To Class: ClassName=L1_Nets Member=Wire TP5100_VS
+Added Member To Class: ClassName=R2_Nets Member=Wire TP5100_VS
+Added Member To Class: ClassName=R4_Nets Member=Wire TP5100_VS
+Added Member To Class: ClassName=U1_Nets Member=Wire TP5100_VS
+Added Member To Class: ClassName=J1_Nets Member=Wire VCC
+Added Member To Class: ClassName=C2_Nets Member=Wire VIN
+Added Member To Class: ClassName=R1_Nets Member=Wire VIN
+Added Member To Class: ClassName=R3_Nets Member=Wire VIN
+Added Member To Class: ClassName=R6_Nets Member=Wire VIN
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_6
+Added Rule: Name=Schematic Supply Nets_9

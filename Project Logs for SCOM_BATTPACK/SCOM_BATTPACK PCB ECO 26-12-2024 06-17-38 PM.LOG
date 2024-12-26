@@ -1,0 +1,24 @@
+Removed Member From Class: ClassName=J12_Nets Member=MP2672_NACK
+Removed Member From Class: ClassName=J12_Nets Member=MP2672_NSTAT
+Change Net Name : Old Net Name=MP2672_NACK New Net Name=NetJ12_6
+Change Net Name : Old Net Name=MP2672_NSTAT New Net Name=NetJ12_5
+Added Member To Class: ClassName=POWER Member=Component BAT1 1049
+Added Member To Class: ClassName=POWER Member=Component C2 MLCC_0805
+Added Member To Class: ClassName=POWER Member=Component C6 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component J4 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J6 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J8 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J10 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J11 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component R9 ERP_101-1
+Added Member To Class: ClassName=J12_Nets Member=Wire NetJ12_5
+Added Member To Class: ClassName=J12_Nets Member=Wire NetJ12_6
+Added Member To Class: ClassName=J1_Nets Member=Wire VCC
+Added Member To Class: ClassName=J2_Nets Member=Wire VCC
+Added Member To Class: ClassName=SW1_Nets Member=Wire VCC
+Added Member To Class: ClassName=C1_Nets Member=Wire VIN
+Added Member To Class: ClassName=C2_Nets Member=Wire VIN
+Added Member To Class: ClassName=R1_Nets Member=Wire VIN
+Added Member To Class: ClassName=R3_Nets Member=Wire VIN
+Added Member To Class: ClassName=R6_Nets Member=Wire VIN
+Added Member To Class: ClassName=SW1_Nets Member=Wire VIN
