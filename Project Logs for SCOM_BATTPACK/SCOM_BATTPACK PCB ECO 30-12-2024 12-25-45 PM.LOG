@@ -1,0 +1,56 @@
+Removed Pin From Net: NetName=PACK_P Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=PACK_P Pin=R9-1
+Removed Member From Class: ClassName=C5_Nets Member=NetC5_1
+Removed Member From Class: ClassName=R5_Nets Member=NetC5_1
+Removed Member From Class: ClassName=BAT1_Nets Member=PACK_P
+Removed Member From Class: ClassName=BAT2_Nets Member=PACK_P
+Removed Member From Class: ClassName=C3_Nets Member=PACK_P
+Removed Member From Class: ClassName=C4_Nets Member=PACK_P
+Removed Member From Class: ClassName=R2_Nets Member=PACK_P
+Removed Member From Class: ClassName=R4_Nets Member=PACK_P
+Removed Member From Class: ClassName=U1_Nets Member=PACK_P
+Change Component Designator: OldDesignator=C5 NewDesignator=C3
+Change Component Designator: OldDesignator=J5 NewDesignator=J8
+Change Component Designator: OldDesignator=J6 NewDesignator=J5
+Change Component Designator: OldDesignator=J8 NewDesignator=J6
+Change Component Kind : Designator=R10 Old Kind=Standard (No BOM) New Kind=Standard
+Change component parameters: Designator = "C4" ("C4"); Footprint = "CAPC1608X10N"; UniqueID = "\UMIUWHTZ" ("\UMIUWHTZ")
+Change component parameters (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R10" ("R10"); Footprint = "RES_0603"; UniqueID = "\ARWTCVHL" ("\ARWTCVHL")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "6k8"; VariantName = "[No Variations]"
+Added Component: Designator=C5(CAPC1608X10N)
+Add component (AddParameter): Name = "ERP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Suuplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2.2uF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PACK_P Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Change Net Name : Old Net Name=NetC5_1 New Net Name=NetC3_1
+Change Net Name : Old Net Name=PACK_P New Net Name=TP5100_BATT
+Added Pin To Net: NetName=PACK_P Pin=R9-1
+Added Net: Name=PACK_P
+Change Class Name : Old Net Name=J8_Nets New Net Name=J5_Nets
+Added Class: Name=J8_Nets
+Added Member To Class: ClassName=C3_Nets Member=Wire NetC3_1
+Added Member To Class: ClassName=R5_Nets Member=Wire NetC3_1
+Added Member To Class: ClassName=BAT1_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=BAT2_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=C4_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=C5_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=R2_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=R4_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=U1_Nets Member=Wire TP5100_BATT
+Added Rule: Name=Schematic Supply Nets_7

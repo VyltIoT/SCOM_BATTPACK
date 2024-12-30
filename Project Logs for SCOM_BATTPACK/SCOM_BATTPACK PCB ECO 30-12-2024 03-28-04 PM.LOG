@@ -1,0 +1,30 @@
+Removed Member From Class: ClassName=R9_Nets Member=GND
+Removed Member From Class: ClassName=R5_Nets Member=NetC2_1
+Removed Member From Class: ClassName=R7_Nets Member=NetR7_1
+Removed Member From Class: ClassName=U1_Nets Member=NetR9_2
+Removed Member From Class: ClassName=U2_Nets Member=NetR10_2
+Removed Member From Class: ClassName=R8_Nets Member=TP5100_VREG
+Change Component Designator: OldDesignator=C1 NewDesignator=C2
+Change Component Designator: OldDesignator=C2 NewDesignator=C1
+Change Component Designator: OldDesignator=R7 NewDesignator=R6
+Change Component Designator: OldDesignator=R8 NewDesignator=R7
+Change Component Designator: OldDesignator=R9 NewDesignator=R8
+Change Component Designator: OldDesignator=R10 NewDesignator=R9
+Change Component Designator: OldDesignator=R11 NewDesignator=R10
+Change Net Name : Old Net Name=NetC2_1 New Net Name=NetC1_1
+Change Net Name : Old Net Name=NetR7_1 New Net Name=NetR6_1
+Change Net Name : Old Net Name=NetR7_2 New Net Name=NetR6_2
+Change Net Name : Old Net Name=NetR8_2 New Net Name=NetR7_2
+Change Net Name : Old Net Name=NetR9_2 New Net Name=NetR8_2
+Change Net Name : Old Net Name=NetR10_2 New Net Name=NetR9_2
+Change Net Color : Old Net Color=RGB(171, 184, 200) New Net Color=Default
+Change Class Name : Old Net Name=C1_Nets New Net Name=C2_Nets
+Change Class Name : Old Net Name=R11_Nets New Net Name=R10_Nets
+Added Class: Name=C1_Nets
+Added Class: Name=R6_Nets
+Added Member To Class: ClassName=R8_Nets Member=Wire GND
+Added Member To Class: ClassName=R5_Nets Member=Wire NetC1_1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR6_2
+Added Member To Class: ClassName=U2_Nets Member=Wire NetR9_2
+Added Member To Class: ClassName=R9_Nets Member=Wire TP5100_BATT
+Added Member To Class: ClassName=R7_Nets Member=Wire TP5100_VREG

@@ -1,0 +1,3 @@
+Removed Member From Class: ClassName=R9_Nets Member=PACK_P
+Added Pin To Net: NetName=TP5100_BATT Pin=R9-1
+Added Member To Class: ClassName=R9_Nets Member=Wire TP5100_BATT

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=TP5100_BATT Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Member From Class: ClassName=POWER Member=C3
+Added Member To Class: ClassName=POWER Member=Component C2 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component C4 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component C7 MLCC_0603

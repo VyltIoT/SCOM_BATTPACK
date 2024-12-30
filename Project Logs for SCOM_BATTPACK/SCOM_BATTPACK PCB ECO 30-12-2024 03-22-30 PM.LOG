@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=BATT_CHRG Pin=J11-2
+Removed Member From Class: ClassName=J11_Nets Member=NetJ11_6
+Added Pin To Net: NetName=BATT_CHRG Pin=J11-6
+Added Pin To Net: NetName=NetJ11_2 Pin=J11-2
+Added Net: Name=NetJ11_2
+Added Member To Class: ClassName=J11_Nets Member=Wire NetJ11_2

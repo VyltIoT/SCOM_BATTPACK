@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=TP5100_VREG Pin=U1-13
+Added Component: Designator=R11(RES_0603)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TP5100_VREG Pin=R11-1
+Added Pin To Net: NetName=NetR11_2 Pin=R11-2
+Added Pin To Net: NetName=NetR11_2 Pin=U1-13
+Added Net: Name=NetR11_2
+Added Class: Name=R11_Nets
+Added Member To Class: ClassName=POWER Member=Component C3 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component C6 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component R11 ERP_101-1
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR11_2

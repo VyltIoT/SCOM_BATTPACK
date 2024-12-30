@@ -1,0 +1,14 @@
+Removed Member From Class: ClassName=R5_Nets Member=NetC3_1
+Change Component Designator: OldDesignator=C3 NewDesignator=C2
+Change Component Designator: OldDesignator=C4 NewDesignator=C3
+Change Component Designator: OldDesignator=C5 NewDesignator=C4
+Change Component Designator: OldDesignator=C6 NewDesignator=C5
+Change Component Designator: OldDesignator=C7 NewDesignator=C6
+Change Component Designator: OldDesignator=C8 NewDesignator=C7
+Change Net Name : Old Net Name=NetC3_1 New Net Name=NetC2_1
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(171, 184, 200)
+Change Class Name : Old Net Name=C5_Nets New Net Name=C3_Nets
+Change Class Name : Old Net Name=C6_Nets New Net Name=C5_Nets
+Added Class: Name=C2_Nets
+Added Class: Name=C6_Nets
+Added Member To Class: ClassName=R5_Nets Member=Wire NetC2_1

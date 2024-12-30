@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VCC Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-2
+Removed Member From Class: ClassName=POWER Member=J2
+Removed Member From Class: ClassName=R8_Nets Member=NetR10_2
+Removed Member From Class: ClassName=R9_Nets Member=NetR10_2
+Removed Member From Class: ClassName=U1_Nets Member=NetR10_2
+Added Member To Class: ClassName=POWER Member=Component R8 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R9 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R11 ERP_101-1
+Added Member To Class: ClassName=R8_Nets Member=Wire NetR8_2
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR8_2
+Added Member To Class: ClassName=R9_Nets Member=Wire NetR9_2
+Added Member To Class: ClassName=U1_Nets Member=Wire NetR9_2

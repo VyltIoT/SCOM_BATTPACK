@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VIN Pin=R6-1
+Removed Member From Class: ClassName=R6_Nets Member=VIN
+Added Pin To Net: NetName=NetR1_1 Pin=R6-1
+Added Member To Class: ClassName=POWER Member=Component J2 2PX1R
+Added Member To Class: ClassName=POWER Member=Component J4 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J6 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J8 ERP_148-2
+Added Member To Class: ClassName=POWER Member=Component J11 ERP_148-2
+Added Member To Class: ClassName=R6_Nets Member=Wire NetR1_1

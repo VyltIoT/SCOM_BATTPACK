@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=NetR1_1 Pin=R6-1
+Removed Pin From Net: NetName=BATT_CHRG Pin=R6-2
+Removed Member From Class: ClassName=POWER Member=R6

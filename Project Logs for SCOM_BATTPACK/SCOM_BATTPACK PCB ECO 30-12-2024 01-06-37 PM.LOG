@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=VIN Pin=C2-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Member From Class: ClassName=POWER Member=C2
+Removed Member From Class: ClassName=R9_Nets Member=TP5100_BATT
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAP_6.3_7.7"; UniqueID = "\YKBXSODD" ("\YKBXSODD")
+Change component parameters (AddParameter): Name = "ERP"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "6.3x7.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Suuplier Part Number 1"; Value = "ST2103SD1419"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=POWER Member=Component C3 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component C5 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component J5 ERP_148-2
+Added Member To Class: ClassName=R9_Nets Member=Wire PACK_P
