@@ -1,0 +1,14 @@
+Removed Member From Class: ClassName=Q2_Nets Member=NetQ3_1
+Removed Member From Class: ClassName=R15_Nets Member=NetQ3_1
+Removed Member From Class: ClassName=R19_Nets Member=NetR14_2
+Removed Member From Class: ClassName=U3_Nets Member=NetR14_2
+Added Member To Class: ClassName=POWER Member=Component Q3 ERP_105-1
+Added Member To Class: ClassName=POWER Member=Component R10 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R15 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R16 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R17 ERP_101-1
+Added Member To Class: ClassName=Q2_Nets Member=Wire NetQ2_1
+Added Member To Class: ClassName=R15_Nets Member=Wire NetQ2_1
+Added Member To Class: ClassName=R17_Nets Member=Wire NetR17_2
+Added Member To Class: ClassName=R19_Nets Member=Wire NetR17_2
+Added Member To Class: ClassName=U3_Nets Member=Wire NetR17_2

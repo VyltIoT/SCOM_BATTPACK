@@ -1,0 +1,22 @@
+Removed Member From Class: ClassName=J11_Nets Member=NetJ11_2
+Added Component: Designator=R20(RES_0603)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3k3"; VariantName = "[No Variations]"
+Added Component: Designator=R21(RES_0603)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VIN Pin=R20-2
+Added Pin To Net: NetName=GND Pin=R21-2
+Added Pin To Net: NetName=ADAP_VOLT Pin=J11-2
+Added Pin To Net: NetName=ADAP_VOLT Pin=R20-1
+Added Pin To Net: NetName=ADAP_VOLT Pin=R21-1
+Added Net: Name=ADAP_VOLT
+Added Class: Name=R20_Nets
+Added Class: Name=R21_Nets
+Added Member To Class: ClassName=POWER Member=Component R20 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R21 ERP_101-1
+Added Member To Class: ClassName=J11_Nets Member=Wire ADAP_VOLT

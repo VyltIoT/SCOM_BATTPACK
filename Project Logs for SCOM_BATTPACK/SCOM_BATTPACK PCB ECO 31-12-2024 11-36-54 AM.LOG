@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetQ2_2 Pin=Q2-2
+Removed Pin From Net: NetName=TP5100_BATT Pin=Q2-3
+Removed Member From Class: ClassName=Q2_Nets Member=NetQ2_2
+Removed Member From Class: ClassName=R14_Nets Member=NetQ2_2
+Removed Member From Class: ClassName=R16_Nets Member=NetQ2_2
+Removed Member From Class: ClassName=ZD2_Nets Member=NetQ2_2
+Added Pin To Net: NetName=TP5100_BATT Pin=Q2-2
+Added Pin To Net: NetName=NetQ2_2 Pin=Q2-3
+Change Net Name : Old Net Name=NetQ2_2 New Net Name=NetQ2_3
+Added Member To Class: ClassName=Q2_Nets Member=Wire NetQ2_3
+Added Member To Class: ClassName=R14_Nets Member=Wire NetQ2_3
+Added Member To Class: ClassName=R16_Nets Member=Wire NetQ2_3
+Added Member To Class: ClassName=ZD2_Nets Member=Wire NetQ2_3
