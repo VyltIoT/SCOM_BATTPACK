@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=VSNS_N Pin=R22-1
+Removed Pin From Net: NetName=VSNS_N Pin=R23-1
+Removed Member From Class: ClassName=POWER Member=R22
+Removed Member From Class: ClassName=J3_Nets Member=VSNS_N
+Removed Member From Class: ClassName=J4_Nets Member=VSNS_N
+Removed Member From Class: ClassName=J5_Nets Member=VSNS_N
+Removed Member From Class: ClassName=D2_Nets Member=VSNS_P
+Removed Member From Class: ClassName=D4_Nets Member=VSNS_P
+Added Pin To Net: NetName=VSNS_N Pin=D2-1
+Added Pin To Net: NetName=VSNS_N Pin=D4-1
+Change Net Name : Old Net Name=VSNS_N New Net Name=12V0
+Added Member To Class: ClassName=D2_Nets Member=Wire 12V0
+Added Member To Class: ClassName=D4_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J3_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J4_Nets Member=Wire 12V0
+Added Member To Class: ClassName=J5_Nets Member=Wire 12V0
+Added Rule: Name=Schematic Supply Nets_5

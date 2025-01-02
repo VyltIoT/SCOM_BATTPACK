@@ -1,0 +1,16 @@
+Change Component Footprint: Designator=BAT1 Old Footprint=1049 New Footprint=BK-18650-PC4
+Change Component Footprint: Designator=BAT2 Old Footprint=1049 New Footprint=BK-18650-PC4
+Change Component Comment : Designator=BAT1 Old Comment=1049 New Comment=BK-18650-PC4
+Change Component Comment : Designator=BAT2 Old Comment=1049 New Comment=BK-18650-PC4
+Change component parameters: Designator = "BAT1" ("BAT1"); Footprint = "1049"; UniqueID = "\FSNBGEKX" ("\FSNBGEKX")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "MPD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "BK-18650-PC4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "BAT2" ("BAT2"); Footprint = "1049"; UniqueID = "\JFRINSMQ" ("\JFRINSMQ")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "MPD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "BK-18650-PC4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"

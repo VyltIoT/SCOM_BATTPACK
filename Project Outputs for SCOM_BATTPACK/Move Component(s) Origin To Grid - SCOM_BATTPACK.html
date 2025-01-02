@@ -1,0 +1,380 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">02-01-2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">02:33:37 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc" class="file"><acronym title="C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc">C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDBBIS0RU4CU4TMNXWRXGGTLGA3LKHYMQ2L2T0LBGYOXRIN20JMB3D"><h2>Components Origin</h2></a><a name="IDHX5RLRFJWMBZ1GQYYPNOBBJUPYPL3ENEJLJ34OVVEYGNFECYKBK"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13718.504mil|Location2.X=13785.433mil|Location1.Y=2938.319mil|Location2.Y=3151.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13718.504mil|Location2.X=13785.433mil|Location1.Y=2938.319mil|Location2.Y=3151.575mil|Absolute=True">SMT Small Component R21-ERP_101-1 (18.3mm,33.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13789.37mil|Location2.X=13856.299mil|Location1.Y=2937.257mil|Location2.Y=3151.575mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13789.37mil|Location2.X=13856.299mil|Location1.Y=2937.257mil|Location2.Y=3151.575mil|Absolute=True">SMT Small Component R20-ERP_101-1 (20.1mm,33.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13937.992mil|Location2.X=14384.843mil|Location1.Y=3632.874mil|Location2.Y=4315.024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13937.992mil|Location2.X=14384.843mil|Location1.Y=3632.874mil|Location2.Y=4315.024mil|Absolute=True">SMT SIP Component U3-XL6019 (28.7mm,55.2mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14170.992mil|Location2.X=14301.181mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14170.992mil|Location2.X=14301.181mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True">SMT Small Component R19-ERP_101-1 (30.6mm,38.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14037.795mil|Location2.X=14167.716mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14037.795mil|Location2.X=14167.716mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True">SMT Small Component R17-ERP_101-1 (27.21mm,38.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13903.937mil|Location2.X=14033.858mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13903.937mil|Location2.X=14033.858mil|Location1.Y=3250mil|Location2.Y=3380.998mil|Absolute=True">SMT Small Component R14-ERP_101-1 (23.81mm,38.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14397.638mil|Location2.X=14877.953mil|Location1.Y=3805.055mil|Location2.Y=4380.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14397.638mil|Location2.X=14877.953mil|Location1.Y=3805.055mil|Location2.Y=4380.998mil|Absolute=True">SMT Small Component L2-IND_1212 (40.8mm,58.65mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13616.079mil|Location2.X=13990.22mil|Location1.Y=4363.189mil|Location2.Y=4671.609mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13616.079mil|Location2.X=13990.22mil|Location1.Y=4363.189mil|Location2.Y=4671.609mil|Absolute=True">SMT Small Component D4-ERP_104-3 (19.6mm,69.6mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14004.921mil|Location2.X=14065.945mil|Location1.Y=4467.52mil|Location2.Y=4682.291mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14004.921mil|Location2.X=14065.945mil|Location1.Y=4467.52mil|Location2.Y=4682.291mil|Absolute=True">SMT Small Component C10-MLCC_0603 (25.5mm,70.5mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14030.993mil|Location2.X=14217.52mil|Location1.Y=3355.315mil|Location2.Y=3416.339mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14030.993mil|Location2.X=14217.52mil|Location1.Y=3355.315mil|Location2.Y=3416.339mil|Absolute=True">SMT Small Component C9-MLCC_0603 (28.6mm,41.5mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14065.945mil|Location2.X=14375mil|Location1.Y=4320.517mil|Location2.Y=4756.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14065.945mil|Location2.X=14375mil|Location1.Y=4320.517mil|Location2.Y=4756.89mil|Absolute=True">SMT Small Component C8-ERP_102-2 (30.2mm,71.4mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14506.89mil|Location2.X=14894.685mil|Location1.Y=3471.457mil|Location2.Y=3780.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14506.89mil|Location2.X=14894.685mil|Location1.Y=3471.457mil|Location2.Y=3780.512mil|Absolute=True">SMT Small Component C7-ERP_102-2 (42.4mm,47.6mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12345.539mil|Location2.X=12455.074mil|Location1.Y=2645.669mil|Location2.Y=2789.433mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12345.539mil|Location2.X=12455.074mil|Location1.Y=2645.669mil|Location2.Y=2789.433mil|Absolute=True">SMT Small Component ZD2-MM3Z (-16.7mm,24.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13461.693mil|Location2.X=13694.044mil|Location1.Y=3488.334mil|Location2.Y=3545.288mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13461.693mil|Location2.X=13694.044mil|Location1.Y=3488.334mil|Location2.Y=3545.288mil|Absolute=True">SMT Small Component ZD1-MM3Z (12.927mm,44.827mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11993.351mil|Location2.X=12179.134mil|Location1.Y=2699.599mil|Location2.Y=2788.59mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11993.351mil|Location2.X=12179.134mil|Location1.Y=2699.599mil|Location2.Y=2788.59mil|Absolute=True">SMT Small Component R18-ERP_101-1 (-23.3mm,25.4mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12104.331mil|Location2.X=12222.79mil|Location1.Y=2584.252mil|Location2.Y=2714.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12104.331mil|Location2.X=12222.79mil|Location1.Y=2584.252mil|Location2.Y=2714.173mil|Absolute=True">SMT Small Component R16-ERP_101-1 (-22.7mm,22.79mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12403.543mil|Location2.X=12627.173mil|Location1.Y=2730.315mil|Location2.Y=2797.244mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12403.543mil|Location2.X=12627.173mil|Location1.Y=2730.315mil|Location2.Y=2797.244mil|Absolute=True">SMT Small Component R15-ERP_101-1 (-14.3mm,25.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11985.871mil|Location2.X=12100.394mil|Location1.Y=2584.252mil|Location2.Y=2714.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11985.871mil|Location2.X=12100.394mil|Location1.Y=2584.252mil|Location2.Y=2714.173mil|Absolute=True">SMT Small Component R13-ERP_101-1 (-24.5mm,22.79mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13226.378mil|Location2.X=13293.307mil|Location1.Y=3395.669mil|Location2.Y=3622.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13226.378mil|Location2.X=13293.307mil|Location1.Y=3395.669mil|Location2.Y=3622.94mil|Absolute=True">SMT Small Component R12-ERP_101-1 (5.8mm,43.4mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13470.472mil|Location2.X=13681.23mil|Location1.Y=3395.669mil|Location2.Y=3462.599mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13470.472mil|Location2.X=13681.23mil|Location1.Y=3395.669mil|Location2.Y=3462.599mil|Absolute=True">SMT Small Component R11-ERP_101-1 (12.8mm,42.6mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14418.992mil|Location2.X=14856.299mil|Location1.Y=3176.649mil|Location2.Y=3516.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14418.992mil|Location2.X=14856.299mil|Location1.Y=3176.649mil|Location2.Y=3516.998mil|Absolute=True">SMT Small Component Q2-IRFR5305TRPBF (40.8mm,39.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12121.544mil|Location2.X=12332.677mil|Location1.Y=2639.764mil|Location2.Y=2809.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12121.544mil|Location2.X=12332.677mil|Location1.Y=2639.764mil|Location2.Y=2809.055mil|Absolute=True">SMT Small Component Q3-ERP_105-1 (-19.6mm,24.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13188.992mil|Location2.X=13488.189mil|Location1.Y=3529.528mil|Location2.Y=4114.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13188.992mil|Location2.X=13488.189mil|Location1.Y=3529.528mil|Location2.Y=4114.998mil|Absolute=True">SMT Small Component Q1-IRFR5305TRPBF (8.1mm,50.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14411.354mil|Location2.X=14819.401mil|Location1.Y=4413.037mil|Location2.Y=4676.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14411.354mil|Location2.X=14819.401mil|Location1.Y=4413.037mil|Location2.Y=4676.181mil|Absolute=True">SMT Small Component D3-ERP_104-3 (39.8mm,71mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13249.65mil|Location2.X=13562.008mil|Location1.Y=4139.701mil|Location2.Y=4513.843mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13249.65mil|Location2.X=13562.008mil|Location1.Y=4139.701mil|Location2.Y=4513.843mil|Absolute=True">SMT Small Component D2-ERP_104-3 (10.2mm,65.4mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14659.449mil|Location2.X=14726.378mil|Location1.Y=2932.568mil|Location2.Y=3127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14659.449mil|Location2.X=14726.378mil|Location1.Y=2932.568mil|Location2.Y=3127.953mil|Absolute=True">SMT Small Component R7-ERP_101-1 (42.2mm,33.3mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14696.347mil|Location2.X=14877.108mil|Location1.Y=2469.488mil|Location2.Y=2530.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14696.347mil|Location2.X=14877.108mil|Location1.Y=2469.488mil|Location2.Y=2530.512mil|Absolute=True">SMT Small Component C3-MLCC_0603 (45.354mm,19mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14801.457mil|Location2.X=14915.079mil|Location1.Y=2893.197mil|Location2.Y=3167.835mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14801.457mil|Location2.X=14915.079mil|Location1.Y=2893.197mil|Location2.Y=3167.835mil|Absolute=True">Small Component J2-2PX1R (46.4mm,33.3mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14101.426mil|Location2.X=14363.663mil|Location1.Y=2706.63mil|Location2.Y=3096.806mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14101.426mil|Location2.X=14363.663mil|Location1.Y=2706.63mil|Location2.Y=3096.806mil|Absolute=True">SMT Small Component D1-ERP_104-3 (30.451mm,29mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13457.343mil|Location2.X=14062.343mil|Location1.Y=1994.744mil|Location2.Y=2147.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13457.343mil|Location2.X=14062.343mil|Location1.Y=1994.744mil|Location2.Y=2147.987mil|Absolute=True">SIP Component J11-ERP_148-2 (18.5mm,7.5mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14146.319mil|Location2.X=14825.307mil|Location1.Y=4967.185mil|Location2.Y=5072.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14146.319mil|Location2.X=14825.307mil|Location1.Y=4967.185mil|Location2.Y=5072.185mil|Absolute=True">SIP Component J7-ERP_148-2 (36mm,83mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18214.992mil|Location2.X=18320.217mil|Location1.Y=3693.563mil|Location2.Y=4362.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18214.992mil|Location2.X=18320.217mil|Location1.Y=3693.563mil|Location2.Y=4362.998mil|Absolute=True">SIP Component J6-ERP_148-2 (133mm,57mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18096.992mil|Location2.X=18202.106mil|Location1.Y=3693.563mil|Location2.Y=4362.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18096.992mil|Location2.X=18202.106mil|Location1.Y=3693.563mil|Location2.Y=4362.998mil|Absolute=True">SIP Component J10-ERP_148-2 (130mm,57mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18214.992mil|Location2.X=18320.216mil|Location1.Y=2630.571mil|Location2.Y=3299.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18214.992mil|Location2.X=18320.216mil|Location1.Y=2630.571mil|Location2.Y=3299.998mil|Absolute=True">SIP Component J9-ERP_148-2 (133mm,30mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14146.319mil|Location2.X=14825.307mil|Location1.Y=4849.075mil|Location2.Y=4954.075mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14146.319mil|Location2.X=14825.307mil|Location1.Y=4849.075mil|Location2.Y=4954.075mil|Absolute=True">SIP Component J3-ERP_148-2 (36mm,80mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18096.992mil|Location2.X=18202.106mil|Location1.Y=2630.571mil|Location2.Y=3299.998mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=18096.992mil|Location2.X=18202.106mil|Location1.Y=2630.571mil|Location2.Y=3299.998mil|Absolute=True">SIP Component J8-ERP_148-2 (130mm,30mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13452.252mil|Location2.X=14121.398mil|Location1.Y=4849.075mil|Location2.Y=4955.074mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13452.252mil|Location2.X=14121.398mil|Location1.Y=4849.075mil|Location2.Y=4955.074mil|Absolute=True">SIP Component J4-ERP_148-2 (20mm,80mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13452.252mil|Location2.X=14121.398mil|Location1.Y=4967.185mil|Location2.Y=5072.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13452.252mil|Location2.X=14121.398mil|Location1.Y=4967.185mil|Location2.Y=5072.185mil|Absolute=True">SIP Component J5-ERP_148-2 (20mm,83mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14193.898mil|Location2.X=14656.496mil|Location1.Y=1833.509mil|Location2.Y=2095.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14193.898mil|Location2.X=14656.496mil|Location1.Y=1833.509mil|Location2.Y=2095.473mil|Absolute=True">Component U2-FOD817A3SD (35.4mm,5.9mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14651.575mil|Location2.X=14781.496mil|Location1.Y=1863.824mil|Location2.Y=1970.473mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14651.575mil|Location2.X=14781.496mil|Location1.Y=1863.824mil|Location2.Y=1970.473mil|Absolute=True">SMT Small Component R10-ERP_101-1 (42.8mm,4.7mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14372.047mil|Location2.X=14438.976mil|Location1.Y=2696.74mil|Location2.Y=2891.732mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14372.047mil|Location2.X=14438.976mil|Location1.Y=2696.74mil|Location2.Y=2891.732mil|Absolute=True">SMT Small Component R5-ERP_101-1 (34.9mm,27.3mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14554.614mil|Location2.X=14816.992mil|Location1.Y=2287.101mil|Location2.Y=2383.558mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14554.614mil|Location2.X=14816.992mil|Location1.Y=2287.101mil|Location2.Y=2383.558mil|Absolute=True">SMT Small Component R2-RES_1206 (43mm,14.817mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12642.717mil|Location2.X=13710.979mil|Location1.Y=2934.382mil|Location2.Y=3307.15mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12642.717mil|Location2.X=13710.979mil|Location1.Y=2934.382mil|Location2.Y=3307.15mil|Absolute=True">Component SW1-ERP_110-4 (9.6mm,35mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13039.37mil|Location2.X=13655.861mil|Location1.Y=2498.032mil|Location2.Y=2925.197mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13039.37mil|Location2.X=13655.861mil|Location1.Y=2498.032mil|Location2.Y=2925.197mil|Absolute=True">Small Component J1-KLDX-0202-AC (14.5mm,25mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14441.729mil|Location2.X=14731.496mil|Location1.Y=2681.786mil|Location2.Y=2918.006mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14441.729mil|Location2.X=14731.496mil|Location1.Y=2681.786mil|Location2.Y=2918.006mil|Absolute=True">LCC Component U1-TP5100 (40.48mm,26.317mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14730.315mil|Location2.X=14797.244mil|Location1.Y=2932.568mil|Location2.Y=3127.953mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14730.315mil|Location2.X=14797.244mil|Location1.Y=2932.568mil|Location2.Y=3127.953mil|Absolute=True">SMT Small Component R9-ERP_101-1 (44mm,33.3mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14781.496mil|Location2.X=14911.417mil|Location1.Y=2808.706mil|Location2.Y=2911.418mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14781.496mil|Location2.X=14911.417mil|Location1.Y=2808.706mil|Location2.Y=2911.418mil|Absolute=True">SMT Small Component R8-ERP_101-1 (46.1mm,28.6mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14482.283mil|Location2.X=14681.606mil|Location1.Y=2525.591mil|Location2.Y=2592.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14482.283mil|Location2.X=14681.606mil|Location1.Y=2525.591mil|Location2.Y=2592.52mil|Absolute=True">SMT Small Component R6-ERP_101-1 (38.5mm,20.5mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14558.551mil|Location2.X=14816.992mil|Location1.Y=2180.802mil|Location2.Y=2277.258mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14558.551mil|Location2.X=14816.992mil|Location1.Y=2180.802mil|Location2.Y=2277.258mil|Absolute=True">SMT Small Component R4-RES_1206 (43mm,12.117mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13741.777mil|Location2.X=13970.535mil|Location1.Y=2687.992mil|Location2.Y=2784.449mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13741.777mil|Location2.X=13970.535mil|Location1.Y=2687.992mil|Location2.Y=2784.449mil|Absolute=True">SMT Small Component R3-RES_1206 (21.5mm,25mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13741.777mil|Location2.X=13970.535mil|Location1.Y=2806.103mil|Location2.Y=2902.559mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13741.777mil|Location2.X=13970.535mil|Location1.Y=2806.103mil|Location2.Y=2902.559mil|Absolute=True">SMT Small Component R1-RES_1206 (21.5mm,28mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13988.747mil|Location2.X=14470.52mil|Location1.Y=2181.723mil|Location2.Y=2730.665mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13988.747mil|Location2.X=14470.52mil|Location1.Y=2181.723mil|Location2.Y=2730.665mil|Absolute=True">SMT Small Component L1-IND_1212 (30.451mm,17.417mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14495.559mil|Location2.X=14689.961mil|Location1.Y=2469.488mil|Location2.Y=2530.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14495.559mil|Location2.X=14689.961mil|Location1.Y=2469.488mil|Location2.Y=2530.512mil|Absolute=True">SMT Small Component C6-MLCC_0603 (40.6mm,19mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14495.559mil|Location2.X=14689.961mil|Location1.Y=2406.496mil|Location2.Y=2467.52mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14495.559mil|Location2.X=14689.961mil|Location1.Y=2406.496mil|Location2.Y=2467.52mil|Absolute=True">SMT Small Component C5-MLCC_0603 (40.6mm,17.4mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14375.048mil|Location2.X=14436.072mil|Location1.Y=2885.526mil|Location2.Y=3070.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14375.048mil|Location2.X=14436.072mil|Location1.Y=2885.526mil|Location2.Y=3070.992mil|Absolute=True">SMT Small Component C1-MLCC_0603 (34.901mm,30.317mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14788.386mil|Location2.X=14908.465mil|Location1.Y=2706.344mil|Location2.Y=2806.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14788.386mil|Location2.X=14908.465mil|Location1.Y=2706.344mil|Location2.Y=2806.102mil|Absolute=True">SMT Small Component C4-MLCC_0603 (46.15mm,26mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13635.906mil|Location2.X=13944.961mil|Location1.Y=2205.709mil|Location2.Y=2593.504mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13635.906mil|Location2.X=13944.961mil|Location1.Y=2205.709mil|Location2.Y=2593.504mil|Absolute=True">SMT Small Component C2-ERP_102-2 (19.277mm,16.45mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14928.937mil|Location2.X=18034.562mil|Location1.Y=3477.756mil|Location2.Y=5065.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14928.937mil|Location2.X=18034.562mil|Location1.Y=3477.756mil|Location2.Y=5065.551mil|Absolute=True">Component BAT1-1049 (87mm,64mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14928.937mil|Location2.X=18034.562mil|Location1.Y=1863.583mil|Location2.Y=3451.378mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=14928.937mil|Location2.X=18034.562mil|Location1.Y=1863.583mil|Location2.Y=3451.378mil|Absolute=True">Component BAT2-1049 (87mm,23mm) on L1</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=12V0 Pin=D2-1
+Removed Pin From Net: NetName=12V0 Pin=D4-1
+Removed Member From Class: ClassName=D2_Nets Member=12V0
+Removed Member From Class: ClassName=D4_Nets Member=12V0
+Removed Member From Class: ClassName=J3_Nets Member=12V0
+Removed Member From Class: ClassName=J4_Nets Member=12V0
+Removed Member From Class: ClassName=J5_Nets Member=12V0
+Added Component: Designator=R?(RESC6432X06M)
+Add component (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2512"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "ST2103SD2111"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R005"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=12V0 Pin=R?-1
+Change Net Name : Old Net Name=12V0 New Net Name=VSNS_N
+Added Pin To Net: NetName=VSNS_P Pin=D2-1
+Added Pin To Net: NetName=VSNS_P Pin=D4-1
+Added Pin To Net: NetName=VSNS_P Pin=R?-2
+Added Net: Name=VSNS_P
+Added Class: Name=R?_Nets
+Added Member To Class: ClassName=POWER Member=Component R? RES_2512
+Added Member To Class: ClassName=J3_Nets Member=Wire VSNS_N
+Added Member To Class: ClassName=J4_Nets Member=Wire VSNS_N
+Added Member To Class: ClassName=J5_Nets Member=Wire VSNS_N
+Added Member To Class: ClassName=D2_Nets Member=Wire VSNS_P
+Added Member To Class: ClassName=D4_Nets Member=Wire VSNS_P
+Added Rule: Name=Schematic Supply Nets_3
