@@ -1,0 +1,385 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD24\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">03-01-2025</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:11:42 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc" class="file"><acronym title="C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc">C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Waived Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">12</td></tr>
+</table>
+</td>
+</table><a name="ID5SR0VQN1HL5PI0DODUB2AS0C2KEXC11LKDTU1MIYA5VST5UQZTK"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCN1OL1MFVMLJMLHLUM4AMRQU5JOEMZBW5GXZBDBRFPPQC4NIJTGF">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZEITH00KQ5CPFYMO3CFVO0O2L2K44EJFNF0CCXUPOARKFXNBDH">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDLC4DJUSQILPNPFKLB4RTAMEW1LYM2EOBHRDU15LOHO2ULR3KZ0JC">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDABS1DT4PCUGQDSWJMFEOVPZL0JW5ISZW5QHBVQSUA5KRIKIWK5">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJUXY1E5UJHTJDJAAJE2CSRDQJBP3HAQ24IUBX1OW0KNDAIAPKJMI">Width Constraint (Min=0.178mm) (Max=5mm) (Preferred=0.5mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVREUBSV5BTUUHVIO3KIDRBM2RI3UTVG0YG0WUZJMX4UC3PJL50C">Routing Topology Rule(Topology=Shortest) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUHRSHPUWJ2PWLUJSEUQ25IKLOD1TFH2GWS3SOZPQ223CHLT1FIMH">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPQOEY1JYE5QEM4PZRXGNNRQ40EE1X22ZQSM2F5JAYMELGMTUJG0C">Hole Size Constraint (Min=0.025mm) (Max=10mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDISR2SYB2TVGQI4OA0KM2KI0TOH3BBQ3CM2BVL2NA3WLJQNNSZQLJ">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBVKDUJAZFRNGG111DMLB4XW01CAFD0GPHIHTY3KTLYIIJBQ1DOFH">Minimum Solder Mask Sliver (Gap=0.203mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID52ZF5W2OB2IIKMXKMSFBWPVZUI3TGGCAHQGFFPCFCBTODGZ2FN1J">Silk To Solder Mask (Clearance=0.203mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLKDF0PTEBKGZMKIPQP3MVUZ4ENXKNQMACJFDRMKB3EIHBRY1EW3D">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDFCV4CPPKGTE1H1RQNCLIU0DFSG2AYKGPG2LLSADKPMP1JD3YYIHN">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2H0W3TOGBRXIDMC50RX4MAVBSB24WBMRNXPQZNDUB0PCLG4CH2VP">Height Constraint (Min=0mm) (Max=55mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Waived Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2HGSKKEMEG00BUXYENTX2OJRENTY5U5PAFCIUII1XVA0I2SWYTAP">Clearance Constraint (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">12</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">12</td>
+</tr>
+</table><br><a name="IDDZW32JRYFSQ5GURKYUYRKYJNXETRKIKIUYTTP0HT1PRZB4L3B1YB"><h2>Rule Violations</h2></a><a name="ID1P1AND4F10VGG1MVPZCIWM3JLN5QQGYQJSTKVOPCOWPDTNX4UG3D"><h2>Waived Violations</h2></a><a name="ID2HGSKKEMEG00BUXYENTX2OJRENTY5U5PAFCIUII1XVA0I2SWYTAP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="waived">Clearance Constraint (Gap=0.254mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 10:58:48 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 10:58:43 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:00:48 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2366.246mil|Location2.Y=2373.912mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:00:50 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,32.65mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 11:01:11 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,32.65mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 11:01:05 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.395mil|Location2.X=15377.062mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,32.65mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:01:13 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=2941.049mil|Location2.Y=2948.715mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,32.65mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:01:15 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,54.35mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 11:01:26 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,54.35mm) on L1 And Region (0 hole(s)) L1 </acronym></a><br>Waived by  at 03-01-2025 11:01:32 AM</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,54.35mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:01:30 AM</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=15369.391mil|Location2.X=15377.058mil|Location1.Y=3795.38mil|Location2.Y=3803.046mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.254mm) Between Arc (59.54mm,54.35mm) on L2 And Region (0 hole(s)) L2 </acronym></a><br>Waived by  at 03-01-2025 11:01:28 AM</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

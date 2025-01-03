@@ -169,23 +169,6 @@ GenerateClassCluster=0
 DocumentUniqueId=XOXQBUEI
 
 [Document8]
-DocumentPath=VYLT_IOT_BATTPACK.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document9]
 DocumentPath=..\..\LIB\IntegratedCircuits\BatteryCharger.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XWKFMGEX
 
-[Document10]
+[Document9]
 DocumentPath=..\..\LIB\IntegratedCircuits\BatteryCharger.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SZJVUQIH
 
-[Document11]
+[Document10]
 DocumentPath=SCOM_BATTPACK.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=BLOCK-DIAGRAM.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +236,28 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=RORNRXGA
 
+[Document12]
+DocumentPath=SCOM_BATTPACK.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for SCOM_BATTPACK\Design Rule Check - SCOM_BATTPACK.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
 DocumentPath=Project Outputs for SCOM_BATTPACK\Move Component(s) Origin To Grid - SCOM_BATTPACK.html
 DItemRevisionGUID=
 

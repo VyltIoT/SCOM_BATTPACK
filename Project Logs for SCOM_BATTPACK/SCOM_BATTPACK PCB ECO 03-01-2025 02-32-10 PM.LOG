@@ -1,0 +1,30 @@
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAP_6.3_7.7"; UniqueID = "\JVUSDODU" ("\JVUSDODU")
+Change component parameters (AddParameter): Name = "ERP"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "6.3x7.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C7" ("C7"); Footprint = "CAP_6.3_7.7"; UniqueID = "\JCSBJUIH" ("\JCSBJUIH")
+Change component parameters (AddParameter): Name = "ERP"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "6.3x7.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C10" ("C10"); Footprint = "CAP_6.3_7.7"; UniqueID = "\USWAFKVQ" ("\USWAFKVQ")
+Change component parameters (AddParameter): Name = "ERP"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "6.3x7.7"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Sharvi"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100uF"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=POWER Member=Component R13 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R14 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R15 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R17 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R20 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R21 ERP_101-1

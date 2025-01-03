@@ -1,0 +1,53 @@
+Removed Member From Class: ClassName=R19_Nets Member=GND
+Removed Member From Class: ClassName=C10_Nets Member=NetC8_1
+Removed Member From Class: ClassName=D3_Nets Member=NetC8_1
+Removed Member From Class: ClassName=D4_Nets Member=NetC8_1
+Removed Member From Class: ClassName=R19_Nets Member=NetR17_2
+Removed Member From Class: ClassName=TP10_Nets Member=NetR17_2
+Removed Member From Class: ClassName=U3_Nets Member=NetR17_2
+Change Component Designator: OldDesignator=C8 NewDesignator=C10
+Change Component Designator: OldDesignator=C9 NewDesignator=C8
+Change Component Designator: OldDesignator=C10 NewDesignator=C9
+Change Component Designator: OldDesignator=R11 NewDesignator=R13
+Change Component Designator: OldDesignator=R12 NewDesignator=R14
+Change Component Designator: OldDesignator=R13 NewDesignator=R15
+Change Component Designator: OldDesignator=R14 NewDesignator=R16
+Change Component Designator: OldDesignator=R15 NewDesignator=R17
+Change Component Designator: OldDesignator=R16 NewDesignator=R18
+Change Component Designator: OldDesignator=R17 NewDesignator=R19
+Change Component Designator: OldDesignator=R18 NewDesignator=R20
+Change Component Designator: OldDesignator=R19 NewDesignator=R21
+Change Component Designator: OldDesignator=R20 NewDesignator=R11
+Change Component Designator: OldDesignator=R21 NewDesignator=R12
+Change Component Designator: OldDesignator=TP1 NewDesignator=TP5
+Change Component Designator: OldDesignator=TP2 NewDesignator=TP1
+Change Component Designator: OldDesignator=TP3 NewDesignator=TP2
+Change Component Designator: OldDesignator=TP4 NewDesignator=TP3
+Change Component Designator: OldDesignator=TP5 NewDesignator=TP4
+Change Net Name : Old Net Name=NetC8_1 New Net Name=NetC9_1
+Change Net Name : Old Net Name=NetR14_2 New Net Name=NetR16_2
+Change Net Name : Old Net Name=NetR17_2 New Net Name=NetR19_2
+Change Class Name : Old Net Name=C9_Nets New Net Name=C8_Nets
+Change Class Name : Old Net Name=R11_Nets New Net Name=R13_Nets
+Change Class Name : Old Net Name=R12_Nets New Net Name=R14_Nets
+Change Class Name : Old Net Name=R13_Nets New Net Name=R15_Nets
+Change Class Name : Old Net Name=R15_Nets New Net Name=R17_Nets
+Change Class Name : Old Net Name=R16_Nets New Net Name=R18_Nets
+Change Class Name : Old Net Name=R18_Nets New Net Name=R20_Nets
+Change Class Name : Old Net Name=R20_Nets New Net Name=R11_Nets
+Change Class Name : Old Net Name=R21_Nets New Net Name=R12_Nets
+Change Class Name : Old Net Name=TP1_Nets New Net Name=TP5_Nets
+Change Class Name : Old Net Name=TP2_Nets New Net Name=TP1_Nets
+Change Class Name : Old Net Name=TP3_Nets New Net Name=TP2_Nets
+Change Class Name : Old Net Name=TP4_Nets New Net Name=TP3_Nets
+Change Class Name : Old Net Name=TP5_Nets New Net Name=TP4_Nets
+Added Class: Name=C9_Nets
+Added Class: Name=R16_Nets
+Added Class: Name=R21_Nets
+Added Member To Class: ClassName=C10_Nets Member=Wire NetC9_1
+Added Member To Class: ClassName=D3_Nets Member=Wire NetC9_1
+Added Member To Class: ClassName=D4_Nets Member=Wire NetC9_1
+Added Member To Class: ClassName=R19_Nets Member=Wire NetR16_2
+Added Member To Class: ClassName=R19_Nets Member=Wire NetR19_2
+Added Member To Class: ClassName=TP10_Nets Member=Wire NetR19_2
+Added Member To Class: ClassName=U3_Nets Member=Wire NetR19_2

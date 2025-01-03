@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=TP5100_VREG Pin=TP3-1
+Added Member To Class: ClassName=POWER Member=Component C9 MLCC_0603
+Added Member To Class: ClassName=POWER Member=Component C10 ERP_102-2
+Added Member To Class: ClassName=POWER Member=Component R12 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R13 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R15 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R18 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component R19 ERP_101-1
+Added Member To Class: ClassName=POWER Member=Component TP1 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP5 TP_1MM

@@ -1,0 +1,4 @@
+Added Component: Designator=TP3(TP_1MM)
+Added Pin To Net: NetName=TP5100_VREG Pin=TP3-1
+Added Class: Name=TP3_Nets
+Added Member To Class: ClassName=POWER Member=Component TP3 TP_1MM

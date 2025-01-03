@@ -1,0 +1,40 @@
+Added Component: Designator=TP1(TP_1MM)
+Added Component: Designator=TP2(TP_1MM)
+Added Component: Designator=TP3(TP_1MM)
+Added Component: Designator=TP4(TP_1MM)
+Added Component: Designator=TP5(TP_1MM)
+Added Component: Designator=TP6(TP_1MM)
+Added Component: Designator=TP7(TP_1MM)
+Added Component: Designator=TP8(TP_1MM)
+Added Component: Designator=TP9(TP_1MM)
+Added Component: Designator=TP10(TP_1MM)
+Added Pin To Net: NetName=12V0 Pin=TP1-1
+Added Pin To Net: NetName=VCC Pin=TP2-1
+Added Pin To Net: NetName=VIN Pin=TP3-1
+Added Pin To Net: NetName=TP5100_VREG Pin=TP4-1
+Added Pin To Net: NetName=ADAP_VOLT Pin=TP5-1
+Added Pin To Net: NetName=NetQ1_1 Pin=TP6-1
+Added Pin To Net: NetName=NetQ3_1 Pin=TP7-1
+Added Pin To Net: NetName=NetQ2_1 Pin=TP8-1
+Added Pin To Net: NetName=NetC7_1 Pin=TP9-1
+Added Pin To Net: NetName=NetR17_2 Pin=TP10-1
+Added Class: Name=TP1_Nets
+Added Class: Name=TP2_Nets
+Added Class: Name=TP3_Nets
+Added Class: Name=TP4_Nets
+Added Class: Name=TP5_Nets
+Added Class: Name=TP6_Nets
+Added Class: Name=TP7_Nets
+Added Class: Name=TP8_Nets
+Added Class: Name=TP9_Nets
+Added Class: Name=TP10_Nets
+Added Member To Class: ClassName=POWER Member=Component TP1 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP2 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP3 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP4 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP5 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP6 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP7 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP8 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP9 TP_1MM
+Added Member To Class: ClassName=POWER Member=Component TP10 TP_1MM

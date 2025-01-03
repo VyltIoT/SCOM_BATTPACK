@@ -1,0 +1,31 @@
+Removed Member From Class: ClassName=R21_Nets Member=GND
+Removed Member From Class: ClassName=R21_Nets Member=NetR19_2
+Removed Member From Class: ClassName=TP10_Nets Member=NetR19_2
+Removed Member From Class: ClassName=U3_Nets Member=NetR19_2
+Change Component Designator: OldDesignator=R13 NewDesignator=R15
+Change Component Designator: OldDesignator=R14 NewDesignator=R16
+Change Component Designator: OldDesignator=R15 NewDesignator=R17
+Change Component Designator: OldDesignator=R16 NewDesignator=R18
+Change Component Designator: OldDesignator=R17 NewDesignator=R19
+Change Component Designator: OldDesignator=R18 NewDesignator=R20
+Change Component Designator: OldDesignator=R19 NewDesignator=R21
+Change Component Designator: OldDesignator=R20 NewDesignator=R22
+Change Component Designator: OldDesignator=R21 NewDesignator=R23
+Change Component Designator: OldDesignator=R22 NewDesignator=R13
+Change Component Designator: OldDesignator=R23 NewDesignator=R14
+Change Net Name : Old Net Name=NetR16_2 New Net Name=NetR18_2
+Change Net Name : Old Net Name=NetR19_2 New Net Name=NetR21_2
+Change Class Name : Old Net Name=R13_Nets New Net Name=R15_Nets
+Change Class Name : Old Net Name=R14_Nets New Net Name=R16_Nets
+Change Class Name : Old Net Name=R15_Nets New Net Name=R17_Nets
+Change Class Name : Old Net Name=R17_Nets New Net Name=R19_Nets
+Change Class Name : Old Net Name=R18_Nets New Net Name=R20_Nets
+Change Class Name : Old Net Name=R20_Nets New Net Name=R22_Nets
+Change Class Name : Old Net Name=R22_Nets New Net Name=R13_Nets
+Change Class Name : Old Net Name=R23_Nets New Net Name=R14_Nets
+Added Class: Name=R18_Nets
+Added Class: Name=R23_Nets
+Added Member To Class: ClassName=R21_Nets Member=Wire NetR18_2
+Added Member To Class: ClassName=R21_Nets Member=Wire NetR21_2
+Added Member To Class: ClassName=TP10_Nets Member=Wire NetR21_2
+Added Member To Class: ClassName=U3_Nets Member=Wire NetR21_2

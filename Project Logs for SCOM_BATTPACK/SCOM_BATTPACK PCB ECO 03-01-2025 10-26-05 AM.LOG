@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=ADAP_DET_LV Pin=J11-1
+Removed Pin From Net: NetName=ADAP_VOLT Pin=J11-2
+Removed Member From Class: ClassName=J11_Nets Member=NetJ11_3
+Added Pin To Net: NetName=ADAP_DET_LV Pin=J11-2
+Added Pin To Net: NetName=ADAP_VOLT Pin=J11-3
+Added Pin To Net: NetName=NetJ11_1 Pin=J11-1
+Added Net: Name=NetJ11_1
+Added Member To Class: ClassName=POWER Member=Component TP3 TP_1MM
+Added Member To Class: ClassName=J11_Nets Member=Wire NetJ11_1

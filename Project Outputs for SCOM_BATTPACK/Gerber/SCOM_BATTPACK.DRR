@@ -1,0 +1,23 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: SCOM_BATTPACK.PcbDoc   03-01-2025  04:46:49 PM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : L1 to L2
+ASCII RoundHoles File : SCOM_BATTPACK.TXT
+ASCII RectHoles File : SCOM_BATTPACK-RectHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      8mil (0.2mm)                                              Round             4         PTH        0.13inch (3.30mm)
+T2      16mil (0.4mm)                                             Round             754       PTH        46.25inch (1174.68mm)
+T3      20mil (0.5mm)                                             Round             17        PTH        6.38inch (162.14mm)
+T4      32mil (0.81mm)                                            Round             54        PTH        18.82inch (478.09mm)
+T5      39mil (1mm)                                               Rectangle         3         PTH        1.16inch (29.55mm)
+T6      40mil (1.02mm)                                            Round             2         PTH        0.10inch (2.54mm)
+T7      51mil (1.3mm)                                             Round             8         PTH        1.12inch (28.40mm)
+T8      63mil (1.6mm)                                             Round             8         PTH        10.36inch (263.20mm)
+T9      126mil (3.2mm)                                            Round             8         NPTH       9.03inch (229.44mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              858
+
+Total Processing Time (hh:mm:ss) : 00:00:00
