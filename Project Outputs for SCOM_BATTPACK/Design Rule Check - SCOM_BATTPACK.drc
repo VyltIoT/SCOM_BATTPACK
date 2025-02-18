@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc
-Date     : 03-01-2025
-Time     : 11:11:42 AM
+Date     : 17-02-2025
+Time     : 12:38:57 PM
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
@@ -46,18 +46,18 @@ Processing Rule : Height Constraint (Min=0mm) (Max=55mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 Waived Violations Of Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
-   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 10:58:48 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 10:58:43 AM
+   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 10:58:48 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:00:48 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:00:50 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 11:01:11 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 11:01:05 AM
-   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:13 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:15 AM
+   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:13 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,54.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 11:01:26 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,54.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 11:01:32 AM
-   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,54.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:30 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,54.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:28 AM
+   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,54.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:01:30 AM
 Waived Violations :12
 
 
