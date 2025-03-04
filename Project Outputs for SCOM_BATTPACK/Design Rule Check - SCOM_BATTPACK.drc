@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Satyam.DESKTOP-S570OAU\OneDrive - Vylt Technologies Private Limited\Altium_Designs\SCOM_BATTPACK\SCOM_BATTPACK.PcbDoc
-Date     : 17-02-2025
-Time     : 12:38:57 PM
+Date     : 04-03-2025
+Time     : 01:18:36 PM
 
 Processing Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Rule Violations :0
@@ -31,7 +31,11 @@ Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.203mm) (All),(All)
-Rule Violations :0
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.203mm) Between Via (39.93mm,25.767mm) from L1 to L2 And Via (39.93mm,26.867mm) from L1 to L2 [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.203mm) Between Via (39.93mm,25.767mm) from L1 to L2 And Via (41.03mm,25.767mm) from L1 to L2 [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.203mm) Between Via (39.93mm,26.867mm) from L1 to L2 And Via (41.03mm,26.867mm) from L1 to L2 [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.197mm < 0.203mm) Between Via (41.03mm,25.767mm) from L1 to L2 And Via (41.03mm,26.867mm) from L1 to L2 [Top Solder] Mask Sliver [0.197mm] / [Bottom Solder] Mask Sliver [0.197mm]
+Rule Violations :4
 
 Processing Rule : Silk To Solder Mask (Clearance=0.203mm) (IsPad),(All)
 Rule Violations :0
@@ -46,8 +50,8 @@ Processing Rule : Height Constraint (Min=0mm) (Max=55mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 Waived Violations Of Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
-   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 10:58:43 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 10:58:48 AM
+   Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L1 And Region (0 hole(s)) L1 Waived by  at 04-03-2025 01:17:32 PM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:00:48 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,13.35mm) on L2 And Region (0 hole(s)) L2 Waived by  at 03-01-2025 11:00:50 AM
    Waived Violation between Clearance Constraint: (Collision < 0.254mm) Between Arc (59.54mm,32.65mm) on L1 And Region (0 hole(s)) L1 Waived by  at 03-01-2025 11:01:11 AM
@@ -61,6 +65,6 @@ Waived Violations Of Rule : Clearance Constraint (Gap=0.254mm) (All),(All)
 Waived Violations :12
 
 
-Violations Detected : 0
+Violations Detected : 4
 Waived Violations : 12
 Time Elapsed        : 00:00:01
