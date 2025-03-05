@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=C1 Old Footprint=CAPC1608X10N New Footprint=CAPC2012X13L
+Change Component Comment : Designator=C1 Old Comment=MLCC_0603 New Comment=MLCC_0805
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAPC1608X10N"; UniqueID = "\ZVLZSRYT" ("\ZVLZSRYT")
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "0805"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100pF"; VariantName = "[No Variations]"
